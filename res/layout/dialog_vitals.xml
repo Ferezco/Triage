@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin" >
+    
+   <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        
+        <TextView
+    	    android:id="@+id/temperature_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text = "Temperature"
+    	    android:layout_weight=".5"/>
+    	
+        <EditText 
+        android:id="@+id/vital_temperature_editText"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:maxLength="3"
+        android:layout_weight=".5"
+        />
+
+    </TableRow>
+    
+    <TableRow 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        
+        <TextView
+    	    android:id="@+id/systolic_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text = "Systolic BP"
+    	    android:layout_weight=".5"/>
+    	
+        <EditText 
+        android:id="@+id/vital_systolic_editText"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_marginLeft="16dp"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:layout_weight=".5"
+        />
+
+    </TableRow>
+	   <TableRow 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        
+        <TextView
+    	    android:id="@+id/diastolic_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text = "Diastolic BP"
+    	    android:layout_weight=".5"/>
+    	
+        <EditText 
+        android:id="@+id/vital_diastolic_editText"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_marginLeft="16dp"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:layout_weight=".5"
+        />
+
+    </TableRow>
+    
+    <TableRow 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        
+        <TextView
+    	    android:id="@+id/heart_rate_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text = "Heart Rate"
+    	    android:layout_weight=".5"/>
+    	
+        <EditText 
+        android:id="@+id/vital_heart_rate_editText"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_marginLeft="16dp"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:layout_weight=".5"
+        />
+
+    </TableRow>
+	   
+
+</TableLayout>

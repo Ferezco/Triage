@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emergencyroom.PatientPagerActivity">
+    
+     <TextView 
+         android:id="@+id/patient_single_item_healthcardTextView"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         android:textSize="16sp"
+         android:text="healthcard"/>
+     
+     <TextView 
+         android:id="@+id/patient_single_item_birthdateTextView"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:textSize="16sp"
+         android:text="birthDate"/>
+    <!-- 
+	<LinearLayout
+	    android:id="@+id/patient_single_item_prescriptionlayout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/patient_single_item_birthdateTextView"
+		android:orientation="horizontal"
+		android:gravity="top"	    
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp">
+	    
+	    <TextView
+	    android:id="@+id/patient_single_item_prescription"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="Prescriptions:"
+	    android:layout_weight="0.2"
+	    android:textSize="16sp"
+	    android:layout_marginRight="4dp"/>	
+	        
+	    <EditText
+	    android:id="@+id/patient_single_item_prescription_physician"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:hint="Prescription"
+	    android:layout_weight="0.8"/>
+	     
+	</LinearLayout>-->
+
+    <TextView 
+        android:id="@+id/patient_list_item_record_divider"
+        android:layout_below="@id/patient_single_item_healthcardTextView"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:text="@string/records"
+        android:textSize="24sp"/>
+      
+    <View 
+        android:id="@+id/patient_list_item_divider"
+        android:layout_below="@id/patient_list_item_record_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#d41308"
+        android:layout_marginBottom="8dp"/>
+      
+		<ExpandableListView
+          android:id="@+id/patient_single_item_vital_list"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:layout_below="@id/patient_list_item_divider">
+          </ExpandableListView>
+            
+</RelativeLayout>
+

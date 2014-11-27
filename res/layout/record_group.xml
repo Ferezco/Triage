@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp">
+    
+		<CheckedTextView 
+		    android:id="@+id/record_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"/>
+    
+    	<TextView 
+	        android:id="@+id/record_arrival"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="arrival_time"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@id/record_name"
+	        android:layout_alignBaseline="@id/record_name"    />
+	        
+   	   <TextView
+   	       android:id="@+id/record_prescription"
+   	       android:layout_width="wrap_content"
+   	       android:layout_height="wrap_content"
+   	       android:layout_alignParentLeft="true"
+   	       android:layout_below="@id/record_name"
+   	       android:layout_marginTop="2dp"
+   	       android:maxWidth="230dp"
+   	       android:text="record_prescription"
+   	       android:textColor="#939598"
+   	       android:textSize="14sp" />
+		
+		<ImageButton
+		    android:id="@+id/new_vital_button"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignTop="@id/record_prescription"
+		    android:src="@drawable/ic_action_new_label"
+		    android:layout_below="@id/record_name"
+		    android:layout_alignParentRight="true"
+		    android:contentDescription="@string/new_vital"
+		    android:focusable="false"
+		    android:background="@android:color/transparent"/>    	    
+
+		<CheckBox 
+		    android:id="@+id/record_seen_checkbox"
+		    android:layout_height ="40dp"
+		    android:layout_width ="40dp"
+		    android:focusable="false"
+		    android:layout_below="@id/record_name"
+		    android:layout_alignTop="@id/record_prescription"
+		    android:layout_toLeftOf="@id/new_vital_button"/>
+		
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_toLeftOf="@id/record_seen_checkbox"
+		    android:layout_below="@id/record_name"
+		    android:text="Seen"
+		    android:layout_alignBottom="@id/record_seen_checkbox"
+		    android:layout_alignBaseline="@id/record_seen_checkbox"/>
+		
+	</RelativeLayout>
+</FrameLayout>
+    

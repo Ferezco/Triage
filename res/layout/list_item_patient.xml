@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        >
+   
+    <TextView 
+        android:id="@+id/patient_list_item_nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="patient_name"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"
+        />
+    
+    <TextView 
+        android:id="@+id/patient_list_item_vitalsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_list_item_nameTextView"
+        android:text="patient_description"
+        android:textSize="14sp"
+        android:textColor="#939598"
+        />
+    
+    <TextView 
+        android:id="@+id/patient_list_item_arrivalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arrival_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/patient_list_item_nameTextView"    />
+    
+     </RelativeLayout>
+
+</FrameLayout>
